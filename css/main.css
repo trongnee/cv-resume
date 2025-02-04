@@ -123,7 +123,7 @@ blockquote:before,
 dd:before,
 .portfolio-nav .back:before,
 .process:before {
-	font-family: FontAwesome;
+	font-family: fontello;
 	font-weight: normal;
 	text-align: left;
 	font-style: normal;
@@ -1436,10 +1436,10 @@ h2 i.fa:before {
 
 .fun-fact h4 {
 	margin: 5px 0 0 96px;
-	font-size: 24px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 1.2;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 /* CLIENT */
@@ -2236,6 +2236,8 @@ h2 i.fa:before {
 .media-box img {
 	display: block;
 	width: 100%;
+	height: 250px;
+	object-fit: contain;
 }
 
 .media-box:hover img {
@@ -2273,7 +2275,7 @@ h2 i.fa:before {
 	line-height: 76px;
 	font-size: 18px;
 	text-align: center;
-	content: "\f0ca";
+	content: "\e86c";
 	color: #fff;
 	background: #096;
 	border-radius: 50%;
