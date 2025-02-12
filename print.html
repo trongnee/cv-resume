@@ -14,14 +14,17 @@
 </head>
 
 <body class="bg-gray-100 p-10">
-  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg screen:shadow-md">
     <!-- Thông tin cá nhân -->
     <div class="border-b pb-6 flex justify-between">
       <div class="flex-1 flex items-center gap-x-5">
-        <img class="h-[100px] rounded" src="./images/avatar.jpg" alt="">
-        <div>
+        <div class="border rounded-full w-[100px] h-[100px] overflow-hidden">
+          <img class="h-full object-cover" src="./images/avatar-2.jpg" alt="">
+        </div>
+        <div class="text-center">
           <h1 class="text-xl font-bold">Phạm Văn Trọng</h1>
           <p class="text-sm italic text-gray-600">PHP Developer</p>
+          <p class="text-sm">(04/04/2001)</p>
         </div>
       </div>
       <div class="border-r"></div>
@@ -29,19 +32,18 @@
         <ul class="flex flex-col px-3">
           <li>📧 Email: trongpv.dev@gmail.com</li>
           <li>📞 Sđt: (+84) 3983 888 874</li>
-          <li>👤 Github: <a href="https://github.com/trongnee">@trongnee</a></li>
-          <li>📍 Địa chỉ: Tây Hồ, Hà Nội</li>
+          <li>📍 Địa chỉ: Cầu Giấy, Hà Nội</li>
         </ul>
       </div>
     </div>
 
     <!-- Mục tiêu nghề nghiệp -->
     <div class="mt-6">
-      <h2 class="text-lg font-bold border-b pb-2">🎯 Mục Tiêu Nghề Nghiệp</h2>
+      <h2 class="text-xl font-bold border-b pb-2 uppercase">🎯 Mục Tiêu Nghề Nghiệp</h2>
       <p class="mt-2 text-gray-700">
       <ul class="list-disc ml-6">
         <li>
-          Trở thành techlead trong các dự án lớn của công ty trong 3-5 năm tới.
+          Trở thành Tech Lead trong các dự án lớn của công ty trong 3-5 năm tới.
         </li>
         <li>
           Phát triển, học tập thêm các kỹ năng còn yếu: kỹ năng mềm, ngoại ngữ...
@@ -49,63 +51,233 @@
       </ul>
       </p>
     </div>
-
-    <!-- Kỹ năng -->
-    <div class="mt-6">
-      <h2 class="text-lg font-bold border-b pb-2">🛠 Kỹ Năng Chuyên Môn</h2>
-      <ul class="list-disc ml-6 mt-2 text-gray-700">
-        <li>PHP, Laravel, CodeIgniter</li>
-        <li>MySQL, MariaDB, PostgreSQL, MongoDB, Redis</li>
-        <li>HTML, CSS, JavaScript (Vue.js, React, React Native)</li>
-        <li>RESTful API, Git, Docker</li>
-      </ul>
-    </div>
-
     <!-- Kinh nghiệm làm việc -->
     <div class="mt-6">
-      <h2 class="text-lg font-bold border-b pb-2">💼 Kinh Nghiệm Làm Việc</h2>
+      <h2 class="text-xl font-bold border-b pb-2 uppercase">💼 Kinh Nghiệm Làm Việc</h2>
       <div class="mt-4">
-        <h3 class="font-bold">Công ty HQ GROUP</h3>
-        <p class="text-gray-600">PHP Developer | 2021 - 2023</p>
-        <ul class="list-disc ml-6 mt-2 text-gray-700">
-          <li>Phát triển và bảo trì hệ thống web bằng Laravel.</li>
-          <li>Tối ưu hóa hiệu suất cơ sở dữ liệu MySQL.</li>
-          <li>Xây dựng API cho Web Client.</li>
-        </ul>
-        <div class="mt-4">
-          <h3 class="font-bold">Công ty VDT SOL</h3>
-          <p class="text-gray-600">Web Developer | 2023 - 2025</p>
-          <ul class="list-disc ml-6 mt-2 text-gray-700">
-            <li>Phát triển phần mềm theo yêu cầu.</li>
-            <li>Làm việc với khách hàng.</li>
-            <li>Phát triển và xây dựng hệ thống bằng Laravel.</li>
+        <h3 class="font-bold">Công ty VDT SOL</h3>
+        <p class="text-gray-600">Web Developer | 2023 - 2025</p>
+        <div class="ml-2">
+          <span class="font-medium">Các dự án đã làm: </span>
+          <ul class="list-disc ml-6">
+            <li>
+              <h4>TTS - ERP <span class="font-medium">(05/2024 - 01/2025)</span></h4>
+              <div class="ml-3">
+                <div>- Mô tả: Đây là dự án ERP quản lý số lượng, chi phí thuế,
+                  trạng thái các đơn hàng là các sản phẩm khi xuất nhập trong kho,
+                  các mặt hàng đa phần là vật tư để cung cấp cho khu công nghiệp.
+                </div>
+                <div>
+                  - Thành viên: 10 thành viên.
+                </div>
+                <div>
+                  - Vai trò:
+                  <ul class="list-disc ml-6">
+                    <li>
+                      Xây dựng base dự án phía back end
+                    </li>
+                    <li>
+                      Phát triển chức năng cho các module
+                    </li>
+                    <li>
+                      Review code, hỗ trợ và đưa ra các
+                      phương án xử lý cho các thành viên khác trong team
+                    </li>
+                    <li>Trao đổi với khách hàng và làm rõ các vấn đề</li>
+                    <li>Hỗ trợ phía front end</li>
+                  </ul>
+                </div>
+                <div>
+                  - Công nghệ: PHP, Laravel, HTML, CSS, Typescript, React JS (Ant Pro), MySQL, Gitlab
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>uTrade <span class="font-medium">(10/2023 - 05/2024)</span></h4>
+              <div class="ml-3">
+                <div>
+                  - Mô tả: Đây là dự án Mobile App giao dịch chứng khoán
+                  với khách hàng là người Singapore
+                </div>
+                <div>
+                  - Thành viên: 15 thành viên.
+                </div>
+                <div>
+                  - Vai trò:
+                  <ul class="list-disc ml-6">
+                    <li>
+                      Xây dựng và phát triển các component UI
+                    </li>
+                    <li>
+                      Xử lý các lỗi Android, IOS
+                    </li>
+                    <li>
+                      Tích hợp API với giao diện
+                    </li>
+                    <li>
+                      Trao đổi với khách hàng và các vai trò các trong team để giải quyết vấn đề
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  - Công nghệ: Javascript, Typescript, React Native, Gitlab
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>Nanogeyser Việt Nam <span class="font-medium">(04/2023 - 10/2023)</span></h4>
+              <div class="ml-3">
+                <div>- Mô tả: Đây là dự án thương mại điện tử
+                  với mặt hàng kinh doanh là máy lọc nước và các phụ kiện máy lọc nước
+                </div>
+                <div>
+                  - Thành viên: 5 thành viên.
+                </div>
+                <div>
+                  - Vai trò:
+                  <ul class="list-disc ml-6">
+                    <li>
+                      Phát triển và bảo trì website
+                    </li>
+                    <li>
+                      Phát triển thêm các chức năng do khách hàng yêu cầu
+                    </li>
+                    <li>Trao đổi với khách hàng và làm rõ các vấn đề</li>
+                    <li>Xử lý các lỗi và thay đổi các giao diện do khách hàng yêu cầu</li>
+                  </ul>
+                </div>
+                <div>
+                  - Công nghệ: PHP, Laravel, HTML, CSS, MySQL, Github
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      <!-- Học vấn -->
+      <div class="mt-4">
+        <h3 class="font-bold">Công ty HQ GROUP</h3>
+        <p class="text-gray-600">PHP Developer | 2021 - 2023</p>
+        <div class="ml-2">
+          <span class="font-medium">Các dự án đã làm: </span>
+          <ul class="list-disc ml-6">
+            <li>
+              <h4>Kho quản lý tập trung <span class="font-medium">(01/2022 - 04/2023)</span></h4>
+              <div class="ml-3">
+                <div>- Mô tả: Đây là một sản phẩm của công ty phát triển,
+                  hệ thống quản lý nhiều website, các web hoạt
+                  động về mảng mua bán các vật phẩm, thẻ game, các dịch vụ liên quan tới game.
+                </div>
+                <div>
+                  - Thành viên: 10 thành viên.
+                </div>
+                <div>
+                  - Vai trò:
+                  <ul class="list-disc ml-6">
+                    <li>
+                      Xây dựng và phát triển các chức năng trong hệ thống
+                      (Phân quyền, thống kê doanh thu, ...).
+                    </li>
+                    <li>
+                      Phát triển các chức năng do cấp trên yêu cầu.
+                    </li>
+                    <li>
+                      Tích hợp API vào giao diện Client
+                    </li>
+                    <li>
+                      Nghiên cứu và học các công cụ mới để áp dụng vào phát triển hệ thống
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  - Công nghệ: PHP, Laravel, HTML, CSS, MySQL, Github
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>R9T Cryto <span class="font-medium">(06/2022 - 12/2022)</span></h4>
+              <div class="ml-3">
+                <div>
+                  - Mô tả: Đây là dự án về Blog News đưa các tin tức về chứng khoán.
+                </div>
+                <div>
+                  - Thành viên: 1 thành viên.
+                </div>
+                <div>
+                  - Vai trò:
+                  <ul class="list-disc ml-6">
+                    <li>
+                      Xây dựng và phát triển các chức năng để đăng bài
+                    </li>
+                    <li>
+                      Xây dựng và phát triển giao diện theo thiết kế
+                    </li>
+                    <li>
+                      Tích hợp API với giao diện
+                    </li>
+                    <li>
+                      Trao đổi với khách hàng và xử lý các vấn đề để đưa ra phương án giải quyết
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  - Công nghệ: HTML, CSS, Javascritp (Jquery), PHP, Laravel, MySQL, GitHub
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>DKT GROUP <span class="font-medium">(09/2021 - 05/2022)</span></h4>
+              <div class="ml-3">
+                <div>- Mô tả: Đây là dự án Landing Page giới thiệu về công ty.
+                </div>
+                <div>
+                  - Thành viên: 2 thành viên.
+                </div>
+                <div>
+                  - Vai trò:
+                  <ul class="list-disc ml-6">
+                    <li>
+                      Xây dựng và phát triển giao diện theo thiết kế 
+                    </li>
+                    <li>
+                      Làm các chức năng liên quan tới quản lý giao diện từ phía back end
+                    </li>
+                    <li>Trao đổi với khách hàng để tiếp nhận thông tin mong muốn của khách hàng</li>
+                  </ul>
+                </div>
+                <div>
+                  - Công nghệ: PHP, Laravel, HTML, CSS, MySQL, Github
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Kỹ năng -->
       <div class="mt-6">
-        <h2 class="text-lg font-bold border-b pb-2">🎓 Học Vấn</h2>
+        <h2 class="text-xl font-bold border-b pb-2 uppercase">🛠 Kỹ Năng Chuyên Môn</h2>
         <ul class="list-disc ml-6 mt-2 text-gray-700">
-          <li>
-            Trường THPT Số 1 Bảo Thắng (12/12).
-          </li>
-          <li>
-            Tốt nghiệp CodeGym: Hệ thống đào tạo lập trình viên.
-          </li>
+          <li>PHP, Laravel, CodeIgniter</li>
+          <li>MySQL, MariaDB, PostgreSQL, MongoDB, Redis</li>
+          <li>HTML, CSS, JavaScript (Vue.js, React, React Native)</li>
+          <li>RESTful API, Git, Docker</li>
         </ul>
       </div>
-
-      <!-- Chứng chỉ -->
+      <!-- Học vấn -->
       <div class="mt-6">
-        <h2 class="text-lg font-bold border-b pb-2">⭐️ Các dự án</h2>
+        <h2 class="text-xl font-bold border-b pb-2 uppercase">🎓 Học Vấn</h2>
         <ul class="list-disc ml-6 mt-2 text-gray-700">
-          <li>Kho quản lý tập trung (quản lý nhiều website trong một hệ thống)</li>
-          <li>Nanogeyser (trang thương mại điện tử, sản phẩm kinh doanh là máy lọc nước)</li>
-          <li>uTrade (ứng dụng di động giao dịch chứng khoán)</li>
-          <li>TTS - ERP (hệ thống ERP quản lý kho)</li>
+          <li>
+            Trường THPT Số 1 Bảo Thắng (2018).
+          </li>
+          <li>
+            Tốt nghiệp CodeGym: Hệ thống đào tạo lập trình viên (08/2021).
+          </li>
         </ul>
       </div>
     </div>
+    <script>
+      // window.print();
+    </script>
 </body>
 
 </html>
